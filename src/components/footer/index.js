@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FooterSC } from './styles';
 
 export const Footer = (props) => {
@@ -7,4 +8,8 @@ export const Footer = (props) => {
       Footer - madebyrogal.com
     </FooterSC>
   )
+};
+
+Footer.propTypes = {
+  theme: PropTypes.string.isRequired,
 };

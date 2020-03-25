@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-bootstrap';
 import { MyButton } from '../buttons/styles';
 import { Title } from './styles';
@@ -16,4 +17,8 @@ export const Header = (props) => {
       </Row>
     </Container>
   );
+};
+
+Header.propTypes = {
+  appSetTheme: PropTypes.func.isRequired,
 };
